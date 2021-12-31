@@ -13,6 +13,7 @@ public class ManagePerson {
 	public boolean removePerson(String personName) {
 		for(Person tmp : personList) {
 			if (tmp.getPersonName().equals(personName)) {
+				System.out.println(tmp.getPersonName() + " 삭제했습니다.");
 				personList.remove(tmp);
 				return true;
 			}
@@ -25,5 +26,4 @@ public class ManagePerson {
 			tmp.doWorks();
 		}
 	}
-
 }
